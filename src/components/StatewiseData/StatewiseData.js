@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import NumberFormat from "react-number-format";
-// import Loader from "../Loader/Loader";
+import Loader from "../Loader/Loader";
 
 const StatewiseData = () => {
   const [data, setData] = useState([]);
@@ -22,7 +22,7 @@ const StatewiseData = () => {
   return (
     <React.Fragment>
       {isLoading ? (
-        "Getting Data..."
+        <Loader />
       ) : (
         <>
           <div className="row mb-4 g-4">
