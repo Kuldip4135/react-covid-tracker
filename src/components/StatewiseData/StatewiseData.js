@@ -26,7 +26,7 @@ const StatewiseData = () => {
   return (
     <React.Fragment>
       {isLoading ? (
-        <Loader />
+        "Getting Data..."
       ) : (
         <>
           <div className="row mb-4 g-4">
